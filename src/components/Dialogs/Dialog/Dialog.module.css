@@ -1,0 +1,8 @@
+.dialogs_item {
+  color: white;
+  text-decoration: none;
+}
+
+.dialogs_item.active {
+  color: gold;
+}

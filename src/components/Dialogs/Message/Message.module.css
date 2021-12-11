@@ -1,0 +1,12 @@
+.dialogs_messages {
+  padding: 10px;
+}
+
+.dialogs_message {
+  color: white;
+}
+
+.dialogs_likes {
+  text-align: center;
+  margin-bottom: 20px;
+}
