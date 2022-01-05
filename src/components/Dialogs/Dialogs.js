@@ -1,36 +1,44 @@
 import React from 'react'
-import { newMessageBodyCreator, sendMessageCreator } from '../../redux/state'
+import { Fragment } from 'react/cjs/react.production.min'
+
 import { Dialog } from './Dialog/Dialog'
 import s from './Dialogs.module.css'
 import { Message } from './Message/Message'
 
 export const Dialogs = (props) => {
-  const dialogData = props.state.dialogs.map((d) => (
-    <Dialog name={d.name} id={d.id} />
+  const dialogData = props.state.dialogs.map((d, i) => (
+    <Dialog key={i} name={d.name} id={d.id} />
   ))
 
-  const messageData = props.state.messages.map((m) => (
-    <Message message={m.message} id={m.id} likes={m.likesCount} />
+  const messageData = props.state.messages.map((m, i) => (
+    <Message key={i} message={m.message} id={m.id} likes={m.likesCount} />
   ))
-  ///////////////
 
   const clickHandler = () => {
-    props.dispatch(sendMessageCreator())
+    props.onSendMessage()
   }
   const changeHandler = (e) => {
     let text = e.target.value
-    props.dispatch(newMessageBodyCreator(text))
+    props.onChangeMessage(text)
   }
 
-  /////////////////
   return (
-    <div className={s.dialogs}>
-      <div className={s.dialogs_items}>{dialogData}</div>
-      <div className={s.dialogs_messages}>{messageData}</div>
-      <div>
-        <textarea value={props.state.newMessageBody} onChange={changeHandler} />
-        <button onClick={clickHandler}>Add</button>
+    <Fragment>
+      <div className={s.dialogs}>
+        <div className={s.dialogs_items}>{dialogData}</div>
+        <div className={s.dialogs_messages}>{messageData}</div>
       </div>
-    </div>
+
+      <div className={s.dialogs_add}>
+        <textarea
+          className={s.dialogs_add__text}
+          value={props.state.newMessageBody}
+          onChange={changeHandler}
+        />
+        <button className={s.dialogs_add__btn} onClick={clickHandler}>
+          Add
+        </button>
+      </div>
+    </Fragment>
   )
 }

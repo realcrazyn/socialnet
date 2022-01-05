@@ -5,7 +5,7 @@ export const Header = () => {
     <header className={s.header}>
       <img
         className={s.header__img}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLuy0lYsuikGlEjTQmgqyLpFJMP_MwUrB3w&usqp=CAU"
+        src="https://brandlogos.net/wp-content/uploads/2021/02/bing-logo.png"
         alt="img"
       />
     </header>

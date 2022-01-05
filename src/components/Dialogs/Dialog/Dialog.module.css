@@ -1,8 +1,5 @@
-.dialogs_item {
-  color: white;
+.dialogs_item a {
+  color: rgba(14, 167, 167, 0.979);
   text-decoration: none;
-}
-
-.dialogs_item.active {
-  color: gold;
+  font-weight: bold;
 }

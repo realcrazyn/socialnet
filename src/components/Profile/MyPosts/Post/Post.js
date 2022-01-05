@@ -8,9 +8,11 @@ export const Post = (props) => {
         src="https://thumbs.dfs.ivi.ru/storage9/contents/b/4/0e3ef20a0f848cf9c84f8b003b62fe.jpg"
         alt="img"
       />
-      {props.message}
+      <p className={s.message}>{props.message}</p>
       <div>
-        <span>like {props.likesCount}</span>
+        <p className={s.likes}>
+          Likes: <span>{props.likesCount}</span>
+        </p>
       </div>
     </div>
   )

@@ -1,12 +1,12 @@
 .nav {
   grid-area: n;
-  background-color: wheat;
+  border: 1px solid rgba(36, 206, 206, 0.651);
+  padding: 20px;
 }
 
 .item a {
-  color: #fff;
-}
-
-.select {
-  background-color: gold;
+  color: rgb(53, 194, 194);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
 }

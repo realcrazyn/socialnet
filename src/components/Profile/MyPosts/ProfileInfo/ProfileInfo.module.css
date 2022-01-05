@@ -1,8 +1,15 @@
-.profile_img {
-  height: 100px;
+.prfile_img {
+  height: 220px;
+  overflow: hidden;
+}
+
+.profile_img__item {
   width: 100%;
 }
 
 .profile_descr {
   padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
 }

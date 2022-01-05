@@ -8,7 +8,7 @@ export const Navbar = () => {
         <NavLink
           to="/profile"
           style={({ isActive }) => ({
-            color: isActive ? 'gold' : '',
+            color: isActive ? '#0084ff' : '',
           })}
         >
           Profile
@@ -17,9 +17,9 @@ export const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="/dialogs/"
-          activeClassName={s.select}
+          activeclassname={s.select}
           style={({ isActive }) => ({
-            color: isActive ? 'gold' : '',
+            color: isActive ? '#0084ff' : '',
           })}
         >
           Messages
@@ -28,9 +28,9 @@ export const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="/news"
-          activeClassName={s.select}
+          activeclassname={s.select}
           style={({ isActive }) => ({
-            color: isActive ? 'gold' : '',
+            color: isActive ? '#0084ff' : '',
           })}
         >
           News
@@ -39,9 +39,9 @@ export const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="/settings"
-          activeClassName={s.select}
+          activeclassname={s.select}
           style={({ isActive }) => ({
-            color: isActive ? 'gold' : '',
+            color: isActive ? '#0084ff' : '',
           })}
         >
           Settings
