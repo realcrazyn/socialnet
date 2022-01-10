@@ -1,4 +1,5 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom'
 import { Fragment } from 'react/cjs/react.production.min'
 
 import { Dialog } from './Dialog/Dialog'
@@ -20,6 +21,14 @@ export const Dialogs = (props) => {
   const changeHandler = (e) => {
     let text = e.target.value
     props.onChangeMessage(text)
+  }
+
+  if (!props.isAuth) {
+    return (
+      <div>
+        <Navigate to={'/login'} />
+      </div>
+    )
   }
 
   return (

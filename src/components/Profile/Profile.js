@@ -5,8 +5,8 @@ import s from './Profile.module.css'
 export const Profile = (props) => {
   return (
     <div className={s.content}>
-      <ProfileInfo />
-      <MyPostsContainer store={props.store} />
+      <ProfileInfo profile={props.profile} />
+      <MyPostsContainer />
     </div>
   )
 }

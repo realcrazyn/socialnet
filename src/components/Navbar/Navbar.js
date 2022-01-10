@@ -38,6 +38,17 @@ export const Navbar = () => {
       </div>
       <div className={s.item}>
         <NavLink
+          to="/users"
+          activeclassname={s.select}
+          style={({ isActive }) => ({
+            color: isActive ? '#0084ff' : '',
+          })}
+        >
+          Users
+        </NavLink>
+      </div>
+      <div className={s.item}>
+        <NavLink
           to="/settings"
           activeclassname={s.select}
           style={({ isActive }) => ({

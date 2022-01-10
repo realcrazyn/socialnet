@@ -1,0 +1,38 @@
+.user_card {
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid rgba(14, 167, 167, 0.979);
+  margin: 10px;
+}
+
+.user_card__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.user_card__logoimg {
+  width: 40px;
+  height: 40px;
+}
+
+.user_pag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user_pag__page {
+  display: block;
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(14, 167, 167, 0.979);
+}
+
+.user_pag__activepage {
+  font-weight: bold;
+}

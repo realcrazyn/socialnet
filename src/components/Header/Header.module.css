@@ -3,10 +3,27 @@
   height: 150px;
   border: 1px solid rgba(36, 206, 206, 0.651);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header img {
   height: 100px;
+}
+
+.header_login {
+  float: right;
+  padding: 50px;
+}
+
+.header_login a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(36, 206, 206, 0.651);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.header_login a:hover {
+  color: #000;
 }
